@@ -96,7 +96,9 @@ const AdvancedInput = ({
           <div className='advanced-border'>
             <Editor
               editorState={editorState}
-              placeholder={'Type your reply here'}
+              placeholder={
+                globalStore.inputPlaceholder || 'Type your reply here.'
+              }
               onEditorStateChange={(editorState) =>
                 onEditorStateChange(editorState)
               }
@@ -200,7 +202,7 @@ const AdvancedInput = ({
                   : null
               }
             >
-              Post
+              {globalStore.submitBtnText || 'Post'}
             </button>
           </div>
         </form>

@@ -120,7 +120,9 @@ const CommentStructure = ({
                   onClick={() => globalStore.handleAction(info.comId, false)}
                 >
                   <div className='replyIcon' />
-                  <span style={{ marginLeft: 17 }}>Reply</span>
+                  <span style={{ marginLeft: 17 }}>
+                    {globalStore.replyBtnText || 'Reply'}
+                  </span>
                 </button>
               </div>
             )}
