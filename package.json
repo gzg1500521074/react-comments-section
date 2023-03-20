@@ -13,6 +13,10 @@
   "engines": {
     "node": ">=10"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "build": "microbundle-crl-with-assets --css-modules false --no-compress --format modern,cjs",
     "start": "microbundle-crl-with-assets --css-modules false watch --no-compress --format modern,cjs",
