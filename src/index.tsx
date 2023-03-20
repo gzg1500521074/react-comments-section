@@ -34,6 +34,9 @@ interface CommentSectionProps {
   currentData?: Function
   removeEmoji?: boolean
   advancedInput?: boolean
+  replyBtnText?: string
+  inputPlaceholder?: string
+  submitBtnText?: string
   commentData: Array<{
     userId: string
     comId: string
@@ -77,7 +80,10 @@ export const CommentSection = ({
   onEditAction,
   customNoComment,
   currentData,
-  advancedInput
+  advancedInput,
+  replyBtnText,
+  inputPlaceholder,
+  submitBtnText
 }: CommentSectionProps) => {
   return (
     <GlobalProvider
@@ -99,6 +105,9 @@ export const CommentSection = ({
       currentData={currentData}
       removeEmoji={removeEmoji}
       advancedInput={advancedInput}
+      replyBtnText={replyBtnText}
+      inputPlaceholder={inputPlaceholder}
+      submitBtnText={submitBtnText}
     >
       <CommentSectionComponent
         overlayStyle={overlayStyle}
