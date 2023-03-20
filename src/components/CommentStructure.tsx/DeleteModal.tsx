@@ -38,7 +38,7 @@ const DeleteModal = ({ comId, parentId }: DeleteModalProps) => {
             Delete
           </button>
           <button className='cancel' onClick={onCloseModal}>
-            Cancel
+            {globalStore.cancelBtnText || 'Cancel'}
           </button>
         </div>
       </Modal>

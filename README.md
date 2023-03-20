@@ -1,12 +1,13 @@
 # @guozg/react-comments-section
 
-On the basis of the original components of the react-comments-section, three global attributes have been added: replyBtnText, inputPlaceholder, and submitBtnText to facilitate further customization.
+On the basis of the original components of the react-comments-section, four global attributes have been added: replyBtnText, cancelBtnText, inputPlaceholder, and submitBtnText to facilitate further customization.
 
 Special thanks for the reference: [react-comments-section](https://github.com/RiyaNegi/react-comments-section)
 
 ## Features
 
 - replyBtnText: reply button text
+- cancelBtnText: cancel button text
 - inputPlaceholder: input box placeholder
 - submitBtnText: submit button text
 

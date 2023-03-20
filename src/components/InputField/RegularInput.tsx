@@ -91,7 +91,7 @@ const RegularInput = ({
               : globalStore.handleAction(comId, false)
           }
         >
-          Cancel
+          {globalStore.cancelBtnText || 'Cancel'}
         </button>
       )}
       <button

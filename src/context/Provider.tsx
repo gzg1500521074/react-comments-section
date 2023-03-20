@@ -25,6 +25,7 @@ export const GlobalProvider = ({
   removeEmoji,
   advancedInput,
   replyBtnText,
+  cancelBtnText,
   inputPlaceholder,
   submitBtnText
 }: {
@@ -70,6 +71,7 @@ export const GlobalProvider = ({
   currentData?: Function
   advancedInput?: boolean
   replyBtnText?: string
+  cancelBtnText?: string
   inputPlaceholder?: string
   submitBtnText?: string
 }) => {
@@ -251,6 +253,7 @@ export const GlobalProvider = ({
         removeEmoji: removeEmoji,
         advancedInput: advancedInput,
         replyBtnText: replyBtnText,
+        cancelBtnText: cancelBtnText,
         inputPlaceholder: inputPlaceholder,
         submitBtnText: submitBtnText
       }}

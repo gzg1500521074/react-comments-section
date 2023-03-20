@@ -64,7 +64,7 @@ const CommentStructure = ({
   const userInfo = () => {
     return (
       <div className='commentsTwo'>
-        <a className='userLink' target='_blank' href={info.userProfile}>
+        <a className='userLink' href={info.userProfile}>
           <div>
             <img
               src={info.avatarUrl}

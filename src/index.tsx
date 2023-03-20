@@ -35,6 +35,7 @@ interface CommentSectionProps {
   removeEmoji?: boolean
   advancedInput?: boolean
   replyBtnText?: string
+  cancelBtnText?: string
   inputPlaceholder?: string
   submitBtnText?: string
   commentData: Array<{
@@ -82,6 +83,7 @@ export const CommentSection = ({
   currentData,
   advancedInput,
   replyBtnText,
+  cancelBtnText,
   inputPlaceholder,
   submitBtnText
 }: CommentSectionProps) => {
@@ -106,6 +108,7 @@ export const CommentSection = ({
       removeEmoji={removeEmoji}
       advancedInput={advancedInput}
       replyBtnText={replyBtnText}
+      cancelBtnText={cancelBtnText}
       inputPlaceholder={inputPlaceholder}
       submitBtnText={submitBtnText}
     >
